@@ -1,0 +1,16 @@
+.immaga {
+    margin: auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__myImg {
+        width: 40%;
+        height: 50%;
+    }
+    &__wrapper {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+}
