@@ -12,8 +12,8 @@ function Header() {
             <img className="header__logo" src={Logo} alt="header logo" />
           </Link>
         </li>
-        <li className="header__about">About</li>
-        <li className="header__login">Login</li>
+        <li className="header__about">Color Detector</li>
+        {/* <li className="header__login">Login</li> */}
       </ul>
     </div>
   );
