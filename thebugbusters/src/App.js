@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Coloring from "./Coloring/Coloring";
+import Coloring from "./components/Coloring/Coloring";
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   const [colors, setColors] = useState([]);
@@ -24,15 +26,11 @@ function App() {
   }, [url]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* new line start*/}
-        <p>To get your profile details: </p>
-        <button onClick={getData}>Click me</button>
-        <Coloring img_url={url} colors={colors}/>
-        {/* end of new line */}
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
