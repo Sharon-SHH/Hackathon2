@@ -6,9 +6,11 @@
   background-image: url(../../assets/images/02_copia.jpg);
   background-size: cover;
   background-position: center center;
-  height: 100%;
+  height: 50%;
   width: 100%;
   margin: 0;
+  padding: 20rem 0;
+  padding-bottom: 0;
 
   &__title {
     color: rgb(54, 18, 138);
@@ -16,19 +18,10 @@
     font-style: italic;
     max-width: 42.5rem;
     padding: 1rem 3rem;
-    // background-image: linear-gradient(
-    //   to right,
-    //   rgb(231, 15, 231),
-    //   rgb(114, 66, 148),
-    //   rgb(84, 84, 208),
-    //   green,
-    //   rgb(218, 218, 40),
-    //   orange,
-    //   rgb(238, 141, 141)
-    // );
-    // -webkit-background-clip: text;
-    // color: transparent;
-    // display: inline-block; /* Ensures the gradient applies to the text */
+    @include tablet {
+      font-size: 8rem;
+      max-width: 50rem;
+    }
   }
 }
 
