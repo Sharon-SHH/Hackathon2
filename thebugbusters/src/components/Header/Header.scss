@@ -35,16 +35,7 @@
     padding-right: 1rem;
   }
 }
-.hero {
-  background-image: url(../../assets/images/02_copia.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 50%;
-  width: 100%;
-  margin: 0;
-  padding-top: 5rem;
-  padding-left: 1rem;
-  &__title {
+.title {
     color: rgb(209, 233, 114);
     font-size: 2rem;
     font-style: italic;
@@ -54,7 +45,6 @@
       max-width: 50rem;
     }
   }
-}
 .rainbow {
   background-image: linear-gradient(
     to right,

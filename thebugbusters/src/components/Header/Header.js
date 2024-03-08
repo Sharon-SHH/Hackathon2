@@ -13,7 +13,7 @@ function Header() {
         <span className="header__about">Color Detector</span>
       </li>
       <li className="header__title">
-        <h1 className="hero__title">
+        <h1 className="title">
           Unleash the <span className="rainbow">Spectrum</span> <br></br>of Your
           Images
         </h1>
