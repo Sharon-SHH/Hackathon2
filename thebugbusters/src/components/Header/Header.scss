@@ -4,21 +4,22 @@
 
 .header {
   display: flex;
-  flex-direction: row;
-  background-color: $purple;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  list-style-type: none;
   color: white;
-  max-width: 100%;
   margin: 0;
   font-size: 50px;
   padding: 1rem 0;
-  height: 120px;
+  height: 6.5rem;
   position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
-  &__list {
+ 
+  &__wrapper {
     display: flex;
-    list-style-type: none;
     align-items: center;
   }
   &__logo {
@@ -28,22 +29,13 @@
   }
   &__about {
     padding: 0 2rem;
+    @include section-header;
   }
   &__title {
-    text-align: right;
     padding-right: 1rem;
   }
 }
-.hero {
-  background-image: url(../../assets/images/02_copia.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 50%;
-  width: 100%;
-  margin: 0;
-  padding-top: 5rem;
-  padding-left: 1rem;
-  &__title {
+.title {
     color: rgb(209, 233, 114);
     font-size: 2rem;
     font-style: italic;
@@ -53,7 +45,6 @@
       max-width: 50rem;
     }
   }
-}
 .rainbow {
   background-image: linear-gradient(
     to right,

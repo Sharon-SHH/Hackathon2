@@ -19,30 +19,29 @@ const PORT = 5001 || 8081;
 
 app.use(cors());
 //This is middleware that allows use to send JSON requests
-// app.use(express.json());
 const fetch = async (url) => {
     try {
         const response = await got(url, {
         username: apiKey,
         password: apiSecret,
         });
-        console.log(response.body);
         return response.body;
     } catch (error) {
         console.log(error.response.body);
+        throw new Error("Couldn't download image.");
     }
 };
-app.use("/colors", async (req, res) => {
-   
+app.get("/colors", async (req, res) => {
     const url =
       "https://api.imagga.com/v2/colors?image_url=" +
       encodeURIComponent(req.query.url);
-    console.log(req.query.url);
-    const outPut = await fetch(url);
-    const colorAPI = JSON.parse(outPut);
-    console.log(`${colorAPI.result.colors.background_colors}`);
-
-    res.json(colorAPI);
+    try {
+      const outPut = await fetch(url);
+      const colorAPI = JSON.parse(outPut);
+      res.json(colorAPI);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
 });
 
 app.listen(PORT, () => {

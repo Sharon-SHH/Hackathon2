@@ -22,3 +22,23 @@
         line-height: 44px;
     } 
 }
+
+@mixin section-header {
+    font-size: 16px;
+    line-height: 22px;
+    @include tablet() {
+        font-size: 26px;
+        line-height: 32px;
+    } 
+}
+
+@mixin body-copy {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    
+    @include tablet{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
