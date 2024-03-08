@@ -3,7 +3,7 @@ import "../InputUrl/InputUrl.scss";
 
 function InputUrl() {
   return (
-    <form className="input-url" id="myForm">
+    <div className="input-url" >
       <label className="input-url__text">Enter Image URL</label>
       <input
         className="input-url__input"
@@ -12,7 +12,7 @@ function InputUrl() {
         placeholder="enter URL here"
       />
       <button className="input-url__button">Show Results!</button>
-    </form>
+    </div>
   );
 }
 

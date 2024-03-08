@@ -1,6 +1,7 @@
 @use "../../styles/colors" as *;
 @use "../../styles/fonts" as *;
 @use "../../styles/mixins" as *;
+
 .hero {
   background-image: url(../../assets/images/02_copia.jpg);
   background-size: cover;
@@ -8,14 +9,13 @@
   height: 50%;
   width: 100%;
   margin: 0;
-  padding: 7rem 0;
-  padding-bottom: 0;
+  padding-top: 5rem;
+  padding-left: 1rem;
   &__title {
-    color: rgb(54, 18, 138);
+    color: rgb(209, 233, 114);
     font-size: 2rem;
     font-style: italic;
     max-width: 42.5rem;
-    padding: 1rem 3rem;
     @include tablet {
       font-size: 4rem;
       max-width: 50rem;
