@@ -28,15 +28,20 @@ const fetch = async (url) => {
         return response.body;
     } catch (error) {
         console.log(error.response.body);
+        throw new Error("Couldn't download image.");
     }
 };
 app.get("/colors", async (req, res) => {
     const url =
       "https://api.imagga.com/v2/colors?image_url=" +
       encodeURIComponent(req.query.url);
-    const outPut = await fetch(url);
-    const colorAPI = JSON.parse(outPut);
-    res.json(colorAPI);
+    try {
+      const outPut = await fetch(url);
+      const colorAPI = JSON.parse(outPut);
+      res.json(colorAPI);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
 });
 
 app.listen(PORT, () => {
