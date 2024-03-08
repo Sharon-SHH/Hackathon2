@@ -10,14 +10,16 @@
   list-style-type: none;
   color: white;
   margin: 0;
-  font-size: 50px;
+  // font-size: 50px;
   padding: 1rem 0;
   height: 6.5rem;
   position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
- 
+  @include tablet {
+    height: 7rem;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
@@ -35,16 +37,6 @@
     padding-right: 1rem;
   }
 }
-.title {
-    color: rgb(209, 233, 114);
-    font-size: 2rem;
-    font-style: italic;
-    max-width: 42.5rem;
-    @include tablet {
-      font-size: 4rem;
-      max-width: 50rem;
-    }
-  }
 .rainbow {
   background-image: linear-gradient(
     to right,
@@ -62,4 +54,7 @@
 }
 h1 {
   @include page-header;
+  color: rgb(209, 233, 114);
+  font-style: italic;
+  max-width: 42.5rem;
 }
