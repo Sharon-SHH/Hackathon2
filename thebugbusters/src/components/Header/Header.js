@@ -13,7 +13,11 @@ function Header() {
           </Link>
         </li>
         <li className="header__about">Color Detector</li>
-        {/* <li className="header__login">Login</li> */}
+        <li className="header__title">
+          <h1 className="hero__title">
+            Unleash the <span className="rainbow">Spectrum</span> of Your Images
+          </h1>
+        </li>
       </ul>
     </div>
   );
