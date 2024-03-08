@@ -7,7 +7,9 @@
 
   ### Mobile Version:
 
-  <img src="./img/mobile-2.png" alt="mobile-2" style="zoom:50%;" />
+  
+
+  <img src="./img/mobile.png" alt="mobile-2" style="zoom:50%;" />
 
   
 
