@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 1rem 0;
+  height: 6.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 7rem;
+  }
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  height: 90px;
+  margin: 0 1rem;
+}
+.header__about {
+  padding: 0 2rem;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media only screen and (min-width: 768px) {
+  .header__about {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+.header__title {
+  padding-right: 1rem;
+}
+
+.rainbow {
+  background-image: linear-gradient(to right, violet, rgb(141, 11, 233), rgb(18, 18, 237), green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(209, 233, 114);
+  font-style: italic;
+  max-width: 42.5rem;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 33px;
+    line-height: 44px;
+  }
+}/*# sourceMappingURL=Header.css.map */

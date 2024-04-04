@@ -1,0 +1,10 @@
+.footer {
+  height: 5rem;
+  background-image: linear-gradient(to left, indigo, violet);
+  vertical-align: middle;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+}
+.footer__copyright {
+  color: #3d40cd;
+}/*# sourceMappingURL=Footer.css.map */

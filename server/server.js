@@ -18,7 +18,9 @@ const url =
 const PORT = 5001 || 8081;
 
 app.use(cors());
+
 //This is middleware that allows use to send JSON requests
+
 const fetch = async (url) => {
     try {
         const response = await got(url, {

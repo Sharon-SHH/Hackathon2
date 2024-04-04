@@ -12,9 +12,11 @@
     }
 
     &__myImg {
+        height: 50%;
         width: 70%;
         @include tablet {
-           width: 40%;
+            margin-left: 1rem;
+            width: 41%;
             height: 50%; 
         }
     }
