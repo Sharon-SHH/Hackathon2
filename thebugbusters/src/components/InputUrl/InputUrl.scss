@@ -6,27 +6,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-
+  padding: 10rem 2rem 2rem 2rem;
+  margin: 0;
+  width: 100%;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    align-items: left;
+    @include tablet {
+      flex-direction: row;
+      align-items: self-start;
+    }
+  }
+  &__inputError {
+    width: 100%;
+  }
   &__text {
+    @include section-header;
     font-weight: 700;
     font-size: 30px;
     padding: 1rem;
     color: $teal;
   }
 
-  &__input {
-    margin: 1rem;
-    padding: 0.5rem;
-    width: 20rem;
-  }
-
   &__button {
+    @include body-copy;
     background-color: $grapefruit;
     color: white;
     border-style: none;
-    border-radius: 2%;
+    border-radius: 5px;
+    height: 44px;
+    border: none;
     padding: 1rem;
-    width: 40rem;
+    width: 98%;
+    @include tablet {
+      width: 30%;
+    }
+    &:hover {
+      background-color: $darkgrapefruit; 
+    }
   }
+}
+
+.App {
+    height: 62vh;
+    margin-bottom: 4.5rem;
+    @include tablet {
+      height: 45vh;
+    }
+}
+.errorMes {
+  color: rgb(226, 57, 57);
+  text-align: left;
 }

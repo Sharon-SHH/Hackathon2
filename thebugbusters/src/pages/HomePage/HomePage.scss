@@ -1,8 +1,23 @@
 @use "../../styles/colors" as *;
 @use "../../styles/fonts" as *;
 @use "../../styles/mixins" as *;
+@use "../../styles/reset" as *;
 
-.footer {
-    height: 5rem;
-    background-color: rgb(205, 176, 205);
+
+.home-page {
+  margin: 0;
+  padding: 0;
+}
+input[type="text"] {
+  border: 1px solid $mercury;
+  border-radius: 5px;
+  color: $purple;
+  padding: 5px;
+  width: 98%;
+  margin-bottom: 1rem;
+  height: 2rem;
+}
+
+p {
+  @include body-copy;
 }
