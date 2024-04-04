@@ -18,15 +18,12 @@ const url =
 const PORT = 5001 || 8081;
 
 app.use(cors());
-//This is middleware that allows use to send JSON requests
-// app.use(express.json());
 const fetch = async (url) => {
     try {
         const response = await got(url, {
         username: apiKey,
         password: apiSecret,
         });
-        console.log(response.body);
         return response.body;
     } catch (error) {
         console.log(error.response.body);
