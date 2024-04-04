@@ -15,7 +15,8 @@
         height: 50%;
         width: 70%;
         @include tablet {
-           width: 41%;
+            margin-left: 1rem;
+            width: 41%;
             height: 50%; 
         }
     }

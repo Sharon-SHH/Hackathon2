@@ -43,7 +43,7 @@
 .header__logo {
   display: flex;
   height: 90px;
-  margin: 0;
+  margin: 0 1rem;
 }
 .header__about {
   padding: 0 2rem;
